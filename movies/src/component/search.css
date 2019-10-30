@@ -1,0 +1,61 @@
+
+
+
+
+*.search {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.searchbar {
+    display: flex;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 750px) {
+    .mob-0 {display: none;}
+    .mob-1{width:8.33%;}
+    .mob-2{width:16.66%;}
+    .mob-3{width:25%;}
+    .mob-4{width:33.33%;}
+    .mob-5{width:41.66%;}
+    .mob-6{width:50%;}
+    .mob-7{width:58.33%;}
+    .mob-8{width:66.66%;}
+    .mob-9{width:75%;}
+    .mob-10{width:83.33%;}
+    .mob-11{width:91.66%;}
+    .mob-12{width:100%;}
+  }
+  @media screen and (min-width: 751px) and (max-width: 1024px){
+      .tab-0 {display: none;}
+      .tab-1{width:8.33%;}
+      .tab-2{width:16.66%;}
+      .tab-3{width:25%;}
+      .tab-4{width:33.33%;}
+      .tab-5{width:41.66%;}
+      .tab-6{width:50%;}
+      .tab-7{width:58.33%;}
+      .tab-8{width:66.66%;}
+      .tab-9{width:75%;}
+      .tab-10{width:83.33%;}
+      .tab-11{width:91.66%;}
+      .tab-12{width:100%;}
+  }
+  @media screen and (min-width: 1025px) {
+    .desk-0 {display: none;}
+     .desk-1{width:8.33%;}
+     .desk-2{width:16.66%;}
+     .desk-3{width:25%;}
+     .desk-4{width:33.33%;}
+     .desk-5{width:41.66%;}
+     .desk-6{width:50%;}
+     .desk-7{width:58.33%;}
+     .desk-8{width:66.66%;}
+     .desk-9{width:75%;}
+     .desk-10{width:83.33%;}
+     .desk-11{width:91.66%;}
+     .desk-12{width:100%;}
+  }
