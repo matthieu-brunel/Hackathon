@@ -1,0 +1,22 @@
+* {
+    font-size: 0.94rem;
+}
+
+.filter {
+    display: flex;
+   
+    justify-content: center;
+}
+
+.filterbar {
+    display:flex;
+    
+    background-color: white;
+}
+
+button {
+    display: flex;
+    
+    float: right;
+}
+

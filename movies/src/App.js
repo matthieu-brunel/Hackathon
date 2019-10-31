@@ -6,6 +6,7 @@ import NavBar from './component/navBar.js';
 import Search from "./component/search";
 import Filter from './component/filter';
 
+
 const hacki = [];
 
 
@@ -32,22 +33,27 @@ class App extends React.Component {
     });
   }
 
+componentDidMount(){
+  this.getMovies();
+}
+
   render() {
     return (
       <div className="App">
-        <NavBar/>
-        {this.state.movies.length == 0 && <p>loading</p>}
-        {this.state.movies.length > 0 && 
+         <NavBar/>
+     <Search/>
+      <Filter/>
+      <div className="row desk-12 wrap">
+        { 
         this.state.movies.map( movie =>
           <Hack movies={movie} />
-        )
-      }
+          )}
+        {this.state.movies.length === 0 ? <p>loading</p> : <Hack movies={this.state.movies}/>}
 
-      <Search/>
-      <Filter/>
+      </div>
 
         
-        <button type="button" onClick={this.getMovies}>Get movies</button>
+       
       </div>
     );
   }

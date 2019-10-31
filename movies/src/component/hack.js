@@ -1,14 +1,18 @@
 import React from 'react';
+import './hack.css';
 
 
 function Hack({ movies }) {
     return (
-      <div>
-        <img src={movies.posterUrl}/>
-          <p>{movies.title}</p>
-          <p>{movies.director}</p>
+      <div className="sect wrap">
+      <div >
+        <img className="poster " src={movies.posterUrl}/>
+          <p className="info">{movies.title}</p>
+          <p className="info">{movies.director}</p>
+          <p className="info">{movies.year}</p>
         
        
+      </div>
       </div>
     );
   };
